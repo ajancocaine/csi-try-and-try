@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>DJ CSI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <ul class="list-unstyled main-menu">
+          
+          <!--Include your navigation here-->
+          <li class="text-right"><a href="#" id="nav-close">X</a></li>
+          <li><a href="#">About Us<span class="icon"></span></a></li>
+          <li><a href="#">Events<span class="icon"></span></a></li>
+          <li><a href="#">Magazine<span class="icon"></span></a></li>
+          <li><a href="#">About Us</a>
+            <ul class="list-unstyled">
+                <li class="sub-nav"><a href="#">Team<span class="icon"></span></a></li>
+                <li class="sub-nav"><a href="#">Objectives<span class="icon"></span></a></li>
+                <li class="sub-nav"><a href="#">Acheivements<span class="icon"></span></a></li>
+            </ul>
+          </li>
+       
+        </ul>
+      </nav>
+          
+    <div class="navbar navbar-inverse navbar-fixed-top">      
+        
+        <!--Include your brand here-->
+        <a class="navbar-brand" href="#">CSI</a>
+        <div class="navbar-header pull-right">
+          <a id="nav-expander" class="nav-expander fixed">
+            MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>
+          </a>
+        </div>
+    </div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Computer Society of INDIA</h1>
+        <p>DJ Sanghvi College of Engineering Student Chapter</p>
+        <p><a class="btn btn-primary btn-lg">What's New? &raquo;</a></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Heading 1</h2>
+          <p>This is Description.This is Description.This is Description.This is Description.This is Description.This is Description.This is Description.This is Description. </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Heading 2</h2>
+          <p>This is Description.This is Description.This is Description.This is Description.This is Description.This is Description.This is Description.This is Description.This is Description. </p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Heading 3</h2>
+          <p>This is Description.This is Description.This is Description.This is Description.This is Description.This is Description.This is Description.This is Description.</p>
+          <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; DJ CSI All Rights Reserved.</p>
+      </footer>
+    </div> <!-- /container -->
+    
+    
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="js/jquery.navgoco.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+    $(document).ready(function(){												
+       
+       //Navigation Menu Slider
+        $('#nav-expander').on('click',function(e){
+      		e.preventDefault();
+      		$('body').toggleClass('nav-expanded');
+      	});
+      	$('#nav-close').on('click',function(e){
+      		e.preventDefault();
+      		$('body').removeClass('nav-expanded');
+      	});
+      	
+      	
+      	// Initialize navgoco with default options
+        $(".main-menu").navgoco({
+            caret: '<span class="caret"></span>',
+            accordion: false,
+            openClass: 'open',
+            save: true,
+            cookie: {
+                name: 'navgoco',
+                expires: false,
+                path: '/'
+            },
+            slide: {
+                duration: 300,
+                easing: 'swing'
+            }
+        });
+  
+        	
+      });
+      </script>
+
+
+   
+    </body>
+</html>
